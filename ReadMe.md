@@ -19,8 +19,8 @@ and so gets built when you build the top-level project.
 To build and execute this project, you need a GraalVM installation on your local machine.
 The free Community Edition works fine if you don't have the paid Enterprise Edition.
 You can download it from here: https://github.com/graalvm/graalvm-ce-builds/releases.
-This repository uses Java 11 features,
-so make sure to download a version for Java 11.
+This repository uses Java 21+ features,
+so make sure to download a modern version of GraalVM (specifically, version 25.1+ / Java 25 is recommended).
 
 Once you've downloaded the correct archive for your operating system and extracted it somewhere on your machine,
 you need to set the `JAVA_HOME`
@@ -36,9 +36,9 @@ command using `JAVA_HOME`:
 ```shell script
 $ $JAVA_HOME/bin/java -version
 
-openjdk version "17.0.5" 2022-10-18
-OpenJDK Runtime Environment GraalVM CE 22.3.0 (build 17.0.5+8-jvmci-22.3-b08)
-OpenJDK 64-Bit Server VM GraalVM CE 22.3.0 (build 17.0.5+8-jvmci-22.3-b08, mixed mode, sharing)
+openjdk version "25.0.3" 2026-04-21
+OpenJDK Runtime Environment (Red_Hat-25.0.3.0.9-1) (build 25.0.3+9)
+OpenJDK 64-Bit Server VM (Red_Hat-25.0.3.0.9-1) (build 25.0.3+9, mixed mode, sharing)
 ```
 
 ## Building
