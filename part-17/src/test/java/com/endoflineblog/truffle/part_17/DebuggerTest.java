@@ -48,7 +48,9 @@ class DebuggerTest {
 
     @BeforeEach
     void setUp() {
-        this.debuggerTester = new DebuggerTester();
+        this.debuggerTester = new DebuggerTester(
+                org.graalvm.polyglot.Context.newBuilder().allowExperimentalOptions(true)
+        );
     }
 
     @AfterEach

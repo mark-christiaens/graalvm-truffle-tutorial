@@ -34,13 +34,13 @@ abstract class AbstractDebuggerScopeObject implements TruffleObject {
     }
 
     @ExportMessage
-    boolean hasLanguage() {
+    boolean hasLanguageId() {
         return true;
     }
 
     @ExportMessage
-    Class<? extends TruffleLanguage<?>> getLanguage() {
-        return EasyScriptTruffleLanguage.class;
+    String getLanguageId() {
+        return "ezs";
     }
 
     @ExportMessage
